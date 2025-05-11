@@ -1,59 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-nav{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation */
+  nav {
     background-color: black;
     color: white;
     padding: 15px;
-}
-li,h1,ul{
-    display: inline;
-}
-ul{
-    margin-left: 60%;
-}
-li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav li {
     color: grey;
     cursor: pointer;
-}
-li:hover{
+    transition: color 0.3s;
+  }
+  
+  nav li:hover {
     color: white;
-}
-input{
-    width: 60%;
-    padding: 15px;
-}
-.searchbar{
-    padding: 50px;
+  }
+  
+  /* Search Bar */
+  .searchbar {
+    padding: 40px;
     text-align: center;
-}
-.box{
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
+  }
+  
+  .searchbar input {
+    width: 60%;
+    max-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .searchbar button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .searchbar button:hover {
+    background-color: #333;
+  }
+  
+  /* Product Section */
+  .product {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .box {
+    border: 2px solid black;
     display: inline-block;
     width: 220px;
-}
-.product{
-    text-align: center;
-}
-.box:hover{
+    margin: 15px;
+    padding: 10px;
+    vertical-align: top;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .box:hover {
     background-color: black;
     color: white;
-}
-.product{
+  }
+  
+  /* About Section */
+  .about {
     text-align: center;
-}
-.about{
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-}
-.contact{
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .about h2 {
+    margin-bottom: 15px;
+  }
+  
+  /* Footer / Contact */
+  .contact {
     background-color: black;
     color: white;
-    padding: 15px;
     text-align: center;
+    padding: 30px 20px;
     margin-top: 20px;
-}
+  }
+  
